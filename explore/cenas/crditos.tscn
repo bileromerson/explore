@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://font letra/ChiKareGo2.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://script/creditos.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 97
+extra_spacing_top = 26
+extra_spacing_char = 5
+extra_spacing_space = -1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 95
+extra_spacing_bottom = 21
+extra_spacing_char = 12
+extra_spacing_space = -4
+font_data = ExtResource( 1 )
+
+[node name="crditos" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0117647, 0, 0, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_top = 2.0
+margin_right = 1027.0
+margin_bottom = 598.0
+
+[node name="credito" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 1027.0
+margin_bottom = 481.0
+custom_colors/font_color = Color( 0.803922, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.419608, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "CRIADOR:Enzo chamone
+ESCOLA:ctrl+play
+ENGINE:godot
+"
+
+[node name="sair" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 485.0
+margin_right = 1027.0
+margin_bottom = 596.0
+custom_colors/font_color = Color( 0, 0.156863, 0.494118, 1 )
+custom_colors/font_outline_modulate = Color( 0.8, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.686275, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "press:Fpara sair"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 513, 298 )

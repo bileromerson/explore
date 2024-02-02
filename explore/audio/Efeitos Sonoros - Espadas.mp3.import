@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Efeitos Sonoros - Espadas.mp3-a85198bdc32e59a1579a48c19de5c185.mp3str"
+
+[deps]
+
+source_file="res://audio/Efeitos Sonoros - Espadas.mp3"
+dest_files=[ "res://.import/Efeitos Sonoros - Espadas.mp3-a85198bdc32e59a1579a48c19de5c185.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
